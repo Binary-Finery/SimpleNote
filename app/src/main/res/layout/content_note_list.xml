@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdf6e3"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.spencerstudios.simplenote.activites.NoteListActivity"
+    tools:showIn="@layout/activity_note_list">
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:fontFamily="@font/short_stack"
+        android:textColor="#2aa198"
+        android:text="you have no saved notes"/>
+
+</LinearLayout>

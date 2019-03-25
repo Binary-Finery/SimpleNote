@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingBottom="16dp"
+    android:textSize="20sp"
+    android:orientation="vertical"
+    android:background="#fdf6e3"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.spencerstudios.simplenote.activites.EditorActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|end"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:onClick="click"
+            android:src="@drawable/ic_delete"
+            android:layout_marginEnd="20dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:onClick="click"
+            android:src="@drawable/ic_share"
+            android:layout_marginEnd="30dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_save"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_save"
+            android:onClick="click"
+            android:layout_marginEnd="15dp"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:ignore="UselessParent">
+
+        <com.spencerstudios.simplenote.customclasses.LineText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/short_stack"
+            android:textColor="#586e75"
+            android:gravity="top" />
+
+    </ScrollView>
+
+</LinearLayout>
